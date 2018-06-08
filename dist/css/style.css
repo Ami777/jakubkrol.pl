@@ -1,0 +1,305 @@
+section > h2 {
+  display: inline-block;
+  background: #3e6680;
+  color: white;
+  font-weight: bold;
+  padding: 5px 50px;
+  border-radius: 10px;
+  margin-top: 50px; }
+  section > h2::before {
+    content: "";
+    position: absolute;
+    border-bottom: 5px dashed #3e6680;
+    z-index: -1; }
+  section > h2::before {
+    left: 25px;
+    right: 25px;
+    margin-top: 15px; }
+section > p.info {
+  margin: 25px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, sans-serif; }
+
+html, body {
+  min-height: 100vh; }
+
+body {
+  background: #fafafa;
+  text-align: center;
+  margin-bottom: 50px; }
+
+a {
+  transition: 0.5s;
+  display: inline-block;
+  color: #4bb3fd; }
+  a:hover {
+    transform: scale(1.05); }
+  a:hover, a:visited {
+    color: #199efc; }
+
+#languages {
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+  #languages li {
+    transition: 0.5s;
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 2px dashed transparent; }
+    #languages li:hover {
+      transform: scale(1.05); }
+    #languages li img {
+      width: 45px; }
+    #languages li.selected {
+      border-bottom-color: #00487c; }
+
+[class^="l-"] {
+  display: none; }
+
+.l-en {
+  display: initial; }
+
+header {
+  margin-top: 100px; }
+  header h1 {
+    margin-top: 25px;
+    color: #3e6680; }
+  header h2 {
+    color: #4bb3fd; }
+  header .contact {
+    margin: 20px; }
+
+#avatar {
+  transition: 0.5s;
+  width: 300px;
+  max-width: 55%;
+  border: 10px solid #4bb3fd; }
+  #avatar:hover {
+    transform: perspective(700px) rotateY(2deg) rotateX(2deg);
+    box-shadow: -7px 7px 1px 0px rgba(75, 178, 252, 0.34); }
+
+#areas {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #areas > div {
+    width: 40%;
+    margin: 25px;
+    color: #4bb3fd;
+    font-size: 135%; }
+
+#cv_download {
+  transition: 0.5s;
+  display: inline-block;
+  background: #4bb3fd;
+  box-shadow: 2px 2px #3e6680;
+  color: white;
+  font-weight: bold;
+  padding: 20px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-bottom: 30px; }
+  #cv_download:hover {
+    transform: scale(1.05); }
+  #cv_download:hover {
+    background: #199efc; }
+
+form {
+  text-align: left;
+  width: 85%;
+  max-width: 800px;
+  margin: 0 auto; }
+  form label.label {
+    font-weight: bold;
+    display: block;
+    margin-top: 25px; }
+  form > input, form > textarea {
+    width: 100%;
+    padding: 10px;
+    background: #c9e8fe;
+    border: 0;
+    border-bottom: 2px dashed #00487c;
+    transition: 0.5s; }
+    form > input:focus, form > textarea:focus {
+      transform: scale(1.01); }
+  form textarea {
+    height: 100px; }
+  form .areasCheckboxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    form .areasCheckboxes > div {
+      width: 50%;
+      padding: 10px; }
+      form .areasCheckboxes > div label {
+        display: block;
+        width: 100%; }
+      form .areasCheckboxes > div input[type="checkbox"] {
+        display: none; }
+      form .areasCheckboxes > div input[type="checkbox"] + label {
+        -webkit-appearance: none;
+        background-color: #fafafa;
+        border: 1px solid #cacece;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+        padding: 9px;
+        border-radius: 20px;
+        display: inline-block;
+        position: relative; }
+      form .areasCheckboxes > div input[type="checkbox"]:hover + label {
+        background-color: #c9e8fe; }
+      form .areasCheckboxes > div input[type="checkbox"]:checked + label {
+        background-color: #4bb3fd;
+        color: white;
+        border: 1px solid #adb8c0;
+        box-shadow: 0 1px 2px #4bb3fd, inset 0px -15px 10px -12px #4bb3fd, inset 15px 10px -12px #4bb3fd, inset 0px 0px 10px rgba(0, 0, 0, 0.1); }
+      form .areasCheckboxes > div input[type="checkbox"] + label:active, form .areasCheckboxes > div input[type="checkbox"]:checked + label:active {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 3px rgba(0, 0, 0, 0.1); }
+      form .areasCheckboxes > div input[type="checkbox"] + label {
+        padding: 5px 16px; }
+      form .areasCheckboxes > div input[type="checkbox"] + label:after {
+        width: 24px;
+        height: 24px;
+        left: 4px;
+        top: 4px; }
+  form button[type="submit"] {
+    transition: 0.5s;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    background: #4bb3fd;
+    box-shadow: 2px 2px #3e6680;
+    color: white;
+    font-weight: bold;
+    padding: 20px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    outline: none;
+    border: none; }
+    form button[type="submit"]:hover {
+      transform: scale(1.05); }
+    form button[type="submit"]:hover {
+      background: #199efc; }
+  form #www, form label[for="www"] {
+    height: 1px;
+    position: absolute;
+    left: -9999px;
+    top: -9999px; }
+  form .message-ui.loader, form .message-ui.alert {
+    display: none; }
+  form .message-ui.loader {
+    text-align: center;
+    margin-top: 50px; }
+  form .message-ui.alert .alert {
+    margin: 15px;
+    padding: 20px 10px;
+    background: #91db91;
+    border: 2px dashed green; }
+    form .message-ui.alert .alert.error {
+      background: #f2b7b7;
+      border-color: maroon; }
+
+.disclaimer {
+  margin: 0 auto;
+  margin-top: 150px;
+  color: #a8a8a8;
+  border-top: 1px dashed #a8a8a8;
+  width: 85%;
+  max-width: 1200px; }
+  .disclaimer p {
+    margin: 25px auto;
+    max-width: 800px;
+    text-align: justify; }
+    .disclaimer p .github img {
+      vertical-align: middle;
+      width: 20px;
+      height: 20px; }
+
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg); }
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00487c;
+  -webkit-animation: sk-foldCubeAngle 1.5s infinite linear both;
+  animation: sk-foldCubeAngle 1.5s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%; }
+
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+  transform: scale(1.1) rotateZ(90deg); }
+
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+  transform: scale(1.1) rotateZ(180deg); }
+
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+  transform: scale(1.1) rotateZ(270deg); }
+
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.18s;
+  animation-delay: 0.18s; }
+
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.36s;
+  animation-delay: 0.36s; }
+
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.54s;
+  animation-delay: 0.54s; }
+
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; }
+  25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1; }
+  90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0; } }
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; }
+  25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1; }
+  90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+section {
+  > h2 {
+    display: inline-block;
+    background: $colorMain;
+    color: white;
+    font-weight: bold;
+    padding:5px 50px;
+    border-radius: 10px;
+    margin-top: 50px;
+
+    &::before{
+      content:"";
+      position: absolute;
+      border-bottom: 5px dashed $colorMain;
+      z-index: -1;
+    }
+
+    &::before{
+      left: 25px;
+      right: 25px;
+      margin-top:15px;
+    }
+  }
+
+  > p.info{
+    margin: 25px;
+  }
+}

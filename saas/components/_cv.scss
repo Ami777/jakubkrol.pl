@@ -1,0 +1,17 @@
+#cv_download{
+  @include zoomer;
+
+  display: inline-block;
+  background: $colorSecondary;
+  box-shadow: 2px 2px $colorMain;
+  color: white;
+  font-weight: bold;
+  padding:20px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-bottom: 30px;
+
+  &:hover{
+    background: darken($colorSecondary, 10%);
+  }
+}

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jakub Król</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../../../AppData/Local/Temp/7zEC5C39B8F/jquery.plate.js"></script>
+    <script src="../../../AppData/Local/Temp/7zEC5C5608F/jquery.plate.js"></script>
+</head>
+<body>
+
+<ul id="languages"></ul>
+
+<header>
+    <img src="./assets/images/avatar.png" alt="" id="avatar">
+
+    <h1>Jakub Król</h1>
+    <h2>
+        <span class="l-pl">Szkoleniowiec, wykładowca</span>
+        <span class="l-en">Trainer, lecturer</span>
+    </h2>
+    <div class="contact">
+        <span class="l-pl">Nr tel.:</span>
+        <span class="l-en">Tel. No.:</span>
+        <a class="enc-my-tel" target="_blank">...</a> | Email: <a class="enc-my-email" target="_blank">...</a> | <a
+            href="https://www.linkedin.com/in/777JakubKrol" target="_blank">LinkedIn</a> | <a href="https://www.facebook.com/777JakubKrol" target="_blank">Facebook</a>
+    </div>
+    <div class="contact">
+        <span class="l-pl">Adres: ul. Warmińska 8/6, 44-335 Jastrzębie-Zdrój</span>
+        <span class="l-en">Address: Poland, ul. Warminska 8/6, 44335 Jastrzebie-Zdroj</span>
+    </div>
+</header>
+
+<section>
+    <h2>
+        <span class="l-pl">Obszary</span>
+        <span class="l-en">Fields of interest</span>
+    </h2>
+    <p class="info">
+        <span class="l-pl">Wierzę w jasne obszary specjalizacji, dlatego najczęściej wykładam w poniższych tematykach.</span>
+        <span class="l-en">I believe in clear areas of specialization, this is why I usually teach the following subjects.</span>
+    </p>
+    <div id="areas">
+        <div>
+            JavaScript
+        </div>
+        <div>
+            ECMAScript 2015+
+        </div>
+        <div>
+            React
+        </div>
+        <div>
+            TypeScript
+        </div>
+        <div>
+            Node.js
+        </div>
+        <div>
+            HTML5, CSS3, Sass
+        </div>
+        <div>
+            Mobile Web
+        </div>
+        <div>
+            jQuery
+        </div>
+        <div>
+            WordPress
+        </div>
+        <div>
+            <span class="l-pl">Podstawy bezpieczeństwa</span>
+            <span class="l-en">Basics of security</span>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>
+        CV
+    </h2>
+    <p class="info">
+        <span class="l-pl">Informacje na temat mojego doświadczenia, certyfikatów, nagród, rekomendacji i inne znajdują się w moim CV.</span>
+        <span class="l-en">Information on my experience, certificates, prizes, recommendations and much more can be found in my CV.</span>
+    </p>
+    <a href="./assets/docs/CV Jakub Król Szkolenia.pdf" id="cv_download" target="_blank">
+        <span class="l-pl">Zobacz moje CV</span>
+        <span class="l-en">View my CV (in Polish)</span>
+    </a>
+</section>
+
+<section>
+    <h2>
+        <span class="l-pl">Kontakt</span>
+        <span class="l-en">Contact information</span>
+    </h2>
+    <p class="info">
+        <span class="l-pl">
+            Zapraszam do kontaktu pod adresem <a class="enc-my-email" target="_blank">...</a>, numerem <a class="enc-my-tel" target="_blank">...</a> lub za pomocą poniższego formularza kontaktowego.
+        </span>
+        <span class="l-en">
+            I invite you to contact with me at <a class="enc-my-email" target="_blank">...</a>, by phone at <a class="enc-my-tel" target="_blank">...</a> or via the contact form below.
+        </span>
+    </p>
+    <form method="POST" action="/send_mail">
+        <label for="name" class="label"><span>* </span>
+            <span class="l-pl">Twoje imię</span>
+            <span class="l-en">Your first name</span>
+        </label>
+        <input type="text" name="name" id="name"><br>
+        <label for="email" class="label"><span>* </span>
+            <span class="l-pl">Twój adres e-mail</span>
+            <span class="l-en">Your e-mail address</span>
+        </label>
+        <input type="email" name="email" id="email">
+        <label for="www" class="label">
+            <span class="l-pl">Twoja strona WWW (NIE PODAWAJ)</span>
+        </label>
+        <input type="text" name="www" id="www"><br>
+        <label for="tel" class="label">
+            <span class="l-pl">Lub nr tel.</span>
+            <span class="l-en">Or tel no.</span>
+        </label>
+        <input type="tel" name="tel" id="tel"><br>
+        <label class="label">
+            <span class="l-pl">Obszary, które Cię interesują</span>
+            <span class="l-en">Areas that interest you</span>
+        </label>
+        <div class="areasCheckboxes">
+            <div>
+                <input type="checkbox" name="areas[]" value="JavaScript" id="areaJavaScript">
+                <label for="areaJavaScript">JavaScript</label>
+            </div>
+            <div>
+                <input type="checkbox" name="areas[]" value="ECMAScript 2015+" id="areaES">
+                <label for="areaES">ECMAScript 2015+</label>
+            </div>
+            <div>
+                <input type="checkbox" name="areas[]" value="React" id="areaReact">
+                <label for="areaReact">React</label>
+            </div>
+            <div>
+                <input type="checkbox" name="areas[]" value="TypeScript" id="areaTypeScript">
+                <label for="areaTypeScript">TypeScript</label>
+            </div>
+            <div>
+                <input type="checkbox" name="areas[]" value="Node.js" id="areaNode">
+                <label for="areaNode">Node.js</label>
+            </div>
+            <div>
+                <input type="checkbox" name="areas[]" value="HTML5, CSS3, Sass" id="areaWeb">
+                <label for="areaWeb">HTML5, CSS3, Sass</label>
+            </div>
+            <div>
+                <input type="checkbox" name="areas[]" value="Mobile Web" id="areaMobileWeb">
+                <label for="areaMobileWeb">Mobile Web</label>
+            </div>
+            <div>
+                <input type="checkbox" name="areas[]" value="jQuery" id="areajQuery">
+                <label for="areajQuery">jQuery</label>
+            </div>
+            <div>
+                <input type="checkbox" name="areas[]" value="WordPress" id="areaWordPress">
+                <label for="areaWordPress">WordPress</label>
+            </div>
+            <div>
+                <input type="checkbox" name="areas[]" value="Security" id="areaSecurity">
+                <label for="areaSecurity">
+                    <span class="l-pl">Podstawy bezpieczeństwa</span>
+                    <span class="l-en">Basics of security</span>
+                </label>
+            </div>
+        </div>
+        <br>
+        <label for="msg" class="label">
+            <span class="l-pl">Wiadomość</span>
+            <span class="l-en">Message</span>
+        </label>
+        <textarea name="msg" id="msg"></textarea><br>
+        <div class="message-ui loader">
+            <div class="sk-folding-cube">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+            </div>
+            <p>
+                <span class="l-pl">Przesyłanie, proszę czekać...</span>
+                <span class="l-en">Sending, please wait...</span>
+            </p>
+        </div>
+        <div class="message-ui alert"></div>
+        <button type="submit" class="message-ui button">
+            <span class="l-pl">Wyślij</span>
+            <span class="l-en">Send</span>
+        </button>
+    </form>
+</section>
+
+<section class="disclaimer">
+    <p>Front-end tej strony został napisany w TypeScript, Saas (JavaScript, HTML5, CSS3). Można go znaleźć na <a href="https://github.com/Ami777/jakubkrol.pl" target="_blank" class="github"><img
+            src="./assets/images/github.png" alt="GitHub"> GitHub</a>.</p>
+    <p>Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w mojej ofercie pracy dla potrzeb niezbędnych do
+        realizacji procesu rekrutacji (zgodnie z ustawą z dnia 29.08.97 roku o Ochronie Danych Osobowych, Dziennik Ustaw nr. 133, poz. 883).</p>
+    <p>Nie jestem zainteresowany pracą w firmach prowadzących kursy typu bootcamp lub podobne do tych oferowanych przez Coders Lab (kilkutygodniowe intensywne kursy od zera lub uzupełniające). Nie pracuję w konkurencyjnych firmach.</p>
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+<script type="text/javascript" src="js/formdata.min.js"></script>
+<script data-main="js/app" type="text/javascript" src="js/require.js"></script>
+</body>
+</html>

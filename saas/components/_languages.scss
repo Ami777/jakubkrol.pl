@@ -1,0 +1,29 @@
+#languages{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+  li{
+    @include zoomer;
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 2px dashed transparent;
+
+    img{
+      width: 45px;
+    }
+
+    &.selected{
+      border-bottom-color: $colorAccent;
+    }
+  }
+}
+
+[class^="l-"]{
+  display: none;
+}
+
+//Show default language in case someone doesn't have JS
+.l-en{
+  display: initial;
+}

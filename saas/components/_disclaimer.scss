@@ -1,0 +1,22 @@
+.disclaimer{
+  margin:0 auto;
+  margin-top:150px;
+  color: #a8a8a8;
+  border-top:1px dashed #a8a8a8;
+  width: 85%;
+  max-width: 1200px;
+
+  p{
+    margin:25px auto;
+    max-width: 800px;
+    text-align: justify;
+
+    .github{
+      img{
+        vertical-align: middle;
+        width:20px;
+        height:20px;
+      }
+    }
+  }
+}

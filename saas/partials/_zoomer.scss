@@ -1,0 +1,16 @@
+@mixin zoomer{
+  transition: 0.5s;
+
+  &:hover{
+    transform: scale(1.05);
+  }
+}
+
+@mixin zoomer-on-img{
+  transition: 0.5s;
+
+  &:hover{
+    transform: perspective(700px) rotateY(2deg) rotateX(2deg);
+    box-shadow: -7px 7px 1px 0px rgba(75, 178, 252, 0.34);
+  }
+}

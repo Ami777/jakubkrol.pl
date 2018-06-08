@@ -1,0 +1,13 @@
+#areas{
+  margin-top:10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  > div{
+    width: 40%;
+    margin: 25px;
+    color: $colorSecondary;
+    font-size: 135%;
+  }
+}

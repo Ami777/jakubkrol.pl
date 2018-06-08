@@ -1,0 +1,27 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+html,body{
+  min-height: 100vh;
+}
+
+body{
+  background: #fafafa;
+  text-align: center;
+  margin-bottom:50px;
+}
+
+a{
+  @include zoomer;
+
+  display: inline-block; //To make zoomer work
+  color: $colorSecondary;
+
+  &:hover, &:visited{
+    color: darken($colorSecondary, 10%);
+  }
+}
