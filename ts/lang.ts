@@ -74,8 +74,8 @@ export default class LangMgr{
     getFirstBrowserLanguage() {
         const nav = window.navigator;
         const browserLanguagePropertyKeys = ['language', 'browserLanguage', 'systemLanguage', 'userLanguage'];
-        let i;
-        let language;
+        let i : number;
+        let language : string;
 
         // support for HTML 5.1 "navigator.languages"
         if (Array.isArray(nav.languages)) {
@@ -89,7 +89,7 @@ export default class LangMgr{
 
         // support for other well known properties in browsers
         for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
-            language = nav[browserLanguagePropertyKeys[i]];
+            language = (<any>nav)[browserLanguagePropertyKeys[i]];
             if (language && language.length) {
                 return language.split('-')[0];
             }

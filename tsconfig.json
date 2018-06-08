@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "amd",
     "outFile" : "./dist/js/app.js",
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": false,

@@ -25,11 +25,11 @@ export default class ContactForm{
         }
     }
 
-    private showMessageUI(className){
+    private showMessageUI(className : string){
         (document.querySelector('.message-ui.'+className) as HTMLElement).style.display = 'block';
     }
 
-    private setAndShowAlert(html){
+    private setAndShowAlert(html : string){
         const alert = document.querySelector('.message-ui.alert') as HTMLElement;
         alert.innerHTML = html;
         langMgr.applyLangToElements(alert);
