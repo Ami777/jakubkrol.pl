@@ -45,6 +45,7 @@ export default class ContactForm{
             const r = await fetch(form.action, {
                 method: 'POST',
                 body: data,
+                credentials: 'include',
             });
             const html = await r.text();
             this.setAndShowAlert(html);

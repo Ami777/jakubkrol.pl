@@ -295,6 +295,7 @@ define("contactForm", ["require", "exports", "app"], function (require, exports,
                             return [4, fetch(form.action, {
                                     method: 'POST',
                                     body: data,
+                                    credentials: 'include',
                                 })];
                         case 1:
                             r = _a.sent();
